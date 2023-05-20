@@ -1,4 +1,4 @@
-module github.com/roeniss/EgloosArk/crawler
+module github.com/roeniss/egloos_ark/crawler
 
 go 1.20
 

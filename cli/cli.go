@@ -1,7 +1,7 @@
 package main
 
 import (
-    `github.com/roeniss/EgloosArk/cli/cmd`
+    `github.com/roeniss/egloos_ark/cli/cmd`
 )
 
 func main() {

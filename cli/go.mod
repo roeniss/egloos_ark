@@ -1,4 +1,4 @@
-module github.com/roeniss/EgloosArk/cli
+module github.com/roeniss/egloos_ark/cli
 
 go 1.20
 

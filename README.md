@@ -27,7 +27,7 @@
 
 ```bash 
 
-go run github.com/roeniss/EgloosArk/cli crwal -b $BLOG_ID
+go run github.com/roeniss/egloos_ark/cli crwal -b $BLOG_ID
 
 ```
 

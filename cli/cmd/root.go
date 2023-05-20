@@ -5,7 +5,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-    Use:   "egloosark",
+    Use:   "egloos_ark",
     Short: "이글루스 블로그의 글을 백업하는 프로그램",
     Long: `이글루스 블로그 팀이 서비스를 종료하면서, 
 혹시라도 블로그의 글을 추출해주는 솔루션을
