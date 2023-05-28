@@ -3,3 +3,6 @@
 egloos_ark.db
 egloos_ark.db.backup
 colly_cache_dir/
+*.png
+.DS_Store
+*.jpg
