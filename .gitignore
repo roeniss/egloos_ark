@@ -6,3 +6,4 @@ colly_cache_dir/
 *.png
 .DS_Store
 *.jpg
+*.gif
