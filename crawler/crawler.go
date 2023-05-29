@@ -145,7 +145,7 @@ func CreateCrawler(repo *SqlRepository, blogId string) *Crawler {
 	imageCollector = mainCollector.Clone()
 
 	imageCollector.OnResponse(func(r *colly.Response) {
-		filename := fmt.Sprintf("../images/%s", url.QueryEscape(r.Request.URL.String()))
+		filename := fmt.Sprintf("./images/%s", url.QueryEscape(r.Request.URL.String()))
 		err := r.Save(filename)
 		if err != nil {
 			fmt.Printf("이미지 저장 실패: %s (err: %v)\n", filename, err)
