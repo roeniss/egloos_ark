@@ -17,13 +17,13 @@ import (
 //
 //
 
-var crawledPages int
+var crawledPosts int
 var savedImages int
 
 func InitProgressDisplay() {
 	go func() {
 		for {
-			fmt.Printf("\rCrawled %d pages / Saved %d imagesls | ", crawledPages, savedImages)
+			fmt.Printf("\rCrawled %d pages / Saved %d imagesls | ", crawledPosts, savedImages)
 			time.Sleep(time.Millisecond * 100) // Adjust the sleep duration as needed
 		}
 	}()
@@ -86,7 +86,7 @@ func CreateCrawler(repo *SqlRepository, blogId string) *Crawler {
 			BlogId:  blogId,
 		}
 		repo.SaveCrawlingFailedPost(crawlingFailedPost)
-		crawledPages++
+		crawledPosts++
 	})
 
 	categoriesCrawled := false
@@ -181,7 +181,7 @@ func ParseAndSavePost(e *colly.HTMLElement, repo *SqlRepository, blogId string) 
 		SavePost(postNum, htmlStr, blogId, repo)
 	}
 
-	crawledPages++
+	crawledPosts++
 }
 
 func SavePost(postNum int, htmlStr string, blogId string, repo *SqlRepository) {
